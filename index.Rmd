@@ -1,0 +1,74 @@
+---
+title: "Hands-On Tranining with R"
+description: |
+  A Delightful Series of Modules to Learn R Programming for Beginners and R Enthusiasts.
+date: "`r Sys.Date()`"    
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, out.width = "100%"}
+# UPDATE IMAGE HERE 
+# or copy/paste this code elsewhere, updating the file path, to add other images to your site!
+knitr::include_graphics("images/r_learners_sm.jpeg")
+```
+
+## Welcome
+
+This site is the official home for all information related to the Hands-On Training with R at LCCI. This is the place to find all the information you'll need to get the most out of this program, including accessing learning materials, exercises, to RStudio, R packages, and additional resources.
+
+## Organizers
+
+Hitendra Pandey <a href="mailto:hitendra.pandey@lilly.com" target="_blank"><i class="fas fa-envelope"></i></a>\
+Satya Vyshnavi Thondapu <a href="mailto:vyshnavi_thondapu_satya@lilly.com" target="_blank"><i class="fas fa-envelope"></i></a>\
+Vignesh Thanikachalam <a href="mailto:thanikachalam_vignesh@lilly.com" target="_blank"><i class="fas fa-envelope"></i></a>\
+
+## Important links
+
+-   [RStudio Server](https://rstudio.am.lilly.com)
+-   Exercise
+
+## Prework
+
+-   Install R & RStudio into your local system from Workspace ONE, or
+-   Access RStudio Server: <https://rstudio.am.lilly.com>.
+
+> You need UNIX account (you should have it if you have access to CLUWE) and a membership. Please request [group membership/management](https://idmportal.rf.lilly.com/IdentityManagement/default.aspx) access to: **`unixacct`** and **`brainiac-compute`** groups for accessing RStudio Server.
+
+<aside>
+
+Make sure you're connect to **BIG-IP client** before accessing RStudio Server.
+
+</aside>
+
+## Learning Objectives
+
+### Part 1
+
+| Module  | Description                            |
+|---------|----------------------------------------|
+| 01      | R Introduction                         |
+| 02      | Importing data into R                  |
+| 03      | General Data Manipulation using Base R |
+| 04      | Functions and Programming              |
+| 05      | Introduction to tidyverse              |
+
+<aside>
+
+After each module you will have exercise to workout and instructors will be there to help you.
+
+</aside>
+
+## Expected sessions (subject to change)
+
+| **Module** | **Date** | **Lecture**                    | **Instructor** |
+|------------|----------|--------------------------------|----------------|
+| 01         |          | [The Very Basic]()             | VT             |
+
+
+## Acknowledgments {.appendix}
+
+This is a website made with [**distill by RStudio**](https://rstudio.github.io/distill/).

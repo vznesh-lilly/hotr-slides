@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:300,400,500,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+:root {  
+  --clr-red: /*#D52B1E*/ #EE342A;
+  --clr-blue: #00A1DE;
+  --clr-orange: #FF6D22;
+  --clr-green: #00AF3F;
+  --clr-accent: #F7F7FF;
+  --clr-gray: #A59D95;
+  --clr-secondary: #82786F;
+  --clr-gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+  --ff-title:'Libre Baskerville', serif;
+  --ff-body: 'Work Sans', sans-serif;
+  --fw-body: 400;
+  --fw-bold: 800;
+  --fw-title: 400;
+  --fw-number: 800;
+}
+
+
+.remark-slide-content p, ul, ol, li {
+  font-size: 1.6rem;
+}
+
+.remark-slide-content {
+  background-color: #ffffff;
+}
+
+pre {
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 4px #D3BF96;
+  padding: 0.25em;
+  background-color: #fff;
+  overflow-x: auto;
+  border-radius: 0px; /*undo rounded corners*/
+}
+
+.remark-code {
+  color:#FF6D22;
+  font-size: 18px;
+}
+
+.remark-inline-code { 
+  color: #FF6D22;
+}
+
+a, a > code {
+  color: #B1059D;
+}
+
+
+:any-link {
+    color: #B1059D;
+    text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover, a:active, a:focus {
+    color: #B1059D;
+    text-decoration: underline;
+}
+
+body { 
+  font-family: var(--ff-body);
+  font-weight: 400;
+  color: #212121;
+}
+
+.remark-slide-content h1 {
+  font-family: var(--ff-title);
+  font-weight: 500;
+  color: var(--clr-red);
+}
+
+.remark-slide-content h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 300;
+  color: var(--clr-secondary);
+  padding-bottom: 10px;
+}
+
+em {
+  color: #DEC9A4;
+}
+
+.remark-slide-content h3 {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #F36A50;
+  font-size: 1.3em;
+}
+
+.remark-slide-content h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #003366;
+}
+
+.remark-code,
+.remark-inline-code{ 
+  font-family: 'DM Mono', monospace;
+}
+
+
+.title-slide {
+  background-image: url(../../images/module/01/lilly-white-background.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+
+.title-slide h1, h2, h3 {
+  margin: 10px;
+}
+
+.title-slide h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2pt;
+  text-transform: uppercase;
+}
+
+.title-slide h2 {
+  color: var(--clr-blue);
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.title-slide h3 {
+  color: var(--clr-gray);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: none;
+  margin-top: 20px;
+}
+
+.title-slide > * {
+  position: relative;
+  top: 32%;
+}
+
+.big-text {
+  color: var(--clr-red);
+  font-size: 2.2em;
+}
+
+/*-- Progress bar --*/
+
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 8px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: rgb(213, 43, 30, .75);
+}
+
+
+.title-slide .remark-slide-number .progress-bar-container {
+  display: none;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+
+.pull-right {
+  float: right;
+  width: 47%;
+}
+
+.pull-right ~ * {
+  clear: both;
+}
+
+h1 .display, 
+h2 .display {
+  font-weight: 500;
+  color: var(--clr-blue);
+}
+
+.frame h1  {
+   border-bottom: 3px solid #D5D2CA;
+   padding-bottom: 10px;
+}
+
+.em {
+  color: #DEC9A4;
+}
+
+.inverse-green {
+  background-color: #5A8365;
+  text-shadow: none;
+}
+
+.inverse-green h1 {
+  color: #F3F0ED;
+}
+
+
+.inverse-blue {
+  background-color: #5DB8E7;
+  text-shadow: none;
+}
+
+.inverse-blue h1 {
+  color: #F3F0ED;
+}
+
+.inverse-blue2 {
+  background-color: #566284;
+  text-shadow: none;
+}
+
+.inverse-blue2 h1 {
+  color: #F3F0ED;
+}
+
+
+
+.inverse-purple {
+  background-color: #7C5F5B;
+  text-shadow: none;
+}
+
+.inverse-purple h1 {
+  color: #F3F0ED;
+}
+
+.inverse .remark-inline-code {
+  color: #f37278;
+}
+
+ul li::marker {
+  color: #F36A50;
+}
+
+img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.red {
+  color: var(--clr-red);
+}
+
+.hbar { 
+  width: 15%; 
+  height: 12px; 
+  background: var(--clr-red);
+  margin: 10px
+}

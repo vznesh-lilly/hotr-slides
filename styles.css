@@ -1,0 +1,121 @@
+
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:300, 300i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Mono&display=swap');
+
+
+body {
+  font-family: "Work Sans";
+  /*color: #1f1f1f;*/
+  color: #212121;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville";
+  letter-spacing: 2px;
+  line-height: 2rem; /* increases, so wrapping headers don't overlap */ 
+  color: #D52B1E;
+  font-weight: 300;
+}
+
+d-title {
+  padding-top: 13rem; /*so that navbar doesn't overlap fixed title */
+}
+
+d-title h1,
+d-article h2 {
+	font-weight: 300;
+}
+
+d-article div.sourceCode code, 
+d-article pre code {
+	font-family: "DM Mono", monospace;
+	font-size: 1rem;
+}
+
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+    --title-size:       18px;
+    --text-color:       #212121;
+    --text-size:        15px;
+    --hover-color:      #D52B1E;
+    --bkgd-color:       #0F2E3D;
+}
+  
+.distill-site-footer {
+    --text-color:       #212121;
+    --text-size:        15px;
+    --hover-color:      #263F6A;
+    --bkgd-color:       #fafafa;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below */
+
+.distill-site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+    padding: 24px;
+    background: #fff;
+    color: inherit;
+}
+
+.distill-site-header .logo img {
+  max-height: 48px;
+}
+
+.distill-site-header .title {
+  display: none;
+}
+
+.distill-site-header a:hover {
+  color: #263F6A;
+}
+
+.distill-site-header .nav-left {
+  margin: 8px;
+  padding: 10px 14px;
+}
+
+d-title {
+    padding-top: 10rem;
+}
+
+/* -------------Appendix---------------- */
+
+d-appendix {
+  background-color: #fafafa;
+  border-top: none !important;
+  color: #1a162d !important;
+}
+
+d-appendix h3 + * {
+	margin-top: 1.65em !important;
+}
+
+ul > li::marker {
+  color: #D52B1E;
+}

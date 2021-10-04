@@ -1,0 +1,179 @@
+---
+title: "Hands-On Training with R"
+author: "Vignesh Thanikachalam"
+output: 
+  learnr::tutorial:
+    language: en
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(shiny)
+library(learnr)
+library(kableExtra)
+library(fontawesome)
+library(here)
+
+```
+
+```{css, echo=FALSE, code=xfun::read_utf8("css/style.css")}
+```
+
+## Welcome
+
+#### Code chunks for activities
+
+In each section of this tutorial, there will be examples and practice activities. You will complete practice activities in code chunks, like the one below. Once you enter your activity code, press 'Run' to see the output. If you get stuck, press the 'Hint' or 'Solution' button.
+
+```{r calculator, exercise = TRUE}
+0.2 + 0.2
+```
+
+```{r calculator-hint}
+0.2 + 0.2 # Should be plus 0.4
+```
+
+```{r calculator-solution}
+(0.2 + 0.2)*100 # Multiply by 100 to make a percentage
+```
+
+When you press 'Run', the **output** of the code is returned below the code chunk.
+
+Go ahead and try typing in some basic calculations in the area below, and notice that when you update the numbers and press 'Run', the output below it is updated. 
+
+```{r practice_calc, exercise = TRUE}
+```
+
+## The Very Basic
+
+### OBJECTS
+
+What is an object? Just a name that you can use to call up stored data. For example, you can save data into an object like `a` or `b`. Wherever R encounters the object, it will replace it with the data saved into an object.
+
+Object names must start with a letter, and can only contain letters, numbers, `_` and `.`. You want your object names to be descriptive, so you’ll need a convention for multiple words. We recommend **snake_case** where you separate lowercase words with `_`. 
+
+
+#### `r fa("fas fa-robot", fill = "#D52B1E")` Example 1
+
+To create an R object, choose a name and then use the less-than symbol, `<`, followed by a minus sign, `-`, to save data into it. This combination looks like an arrow, `<-`.
+
+```{r, echo = TRUE, message = FALSE, warning = FALSE}
+die <- 1
+```
+
+
+#### `r fa("fas fa-robot", fill = "#D52B1E")` Example 2
+
+If you’d like to make an object that have more than one element in them, you can combine them with the `c` function.
+
+```{r, echo = TRUE, message = FALSE, warning = FALSE}
+cards <- c("ace", "hearts")
+```
+
+#### `r fa("fas fa-robot", fill = "#D52B1E")` Example 3
+
+R is case-sensitive, so `name` and `Name` will refer to different objects.
+
+```{r, echo = TRUE, message = FALSE, warning = FALSE}
+Name <- 1
+name <- 0
+
+Name + 1
+```
+
+#### `r fa("fas fa-robot", fill = "#D52B1E")` Example 4
+
+Finally, R will overwrite any previous information stored in an object without asking you for permission. So, it is a good idea to not use names that are already taken:
+
+```{r, echo = TRUE, message = FALSE, warning = FALSE}
+my_number <- 1
+my_number
+
+my_number <- 999
+my_number
+```
+
+### Functions
+
+R has a large collection of built-in functions that are called like this:
+
+```{r, echo = TRUE, message = FALSE, warning = FALSE, eval=FALSE}
+function_name(arg1 = val1, arg2 = val2, ...)
+```
+
+#### `r fa("fas fa-robot", fill = "#D52B1E")` Example 5
+
+Using a function is pretty simple. Just write the name of the function and then the data you want the function to operate on in parentheses.
+
+```{r, echo = TRUE, message = FALSE, warning = FALSE}
+round(3.5)
+```
+
+#### `r fa("fas fa-robot", fill = "#D52B1E")` Example 6
+
+The data that you pass into the function is called the function’s *argument*. The argument can be raw data, an R object, or even the results of another R function.
+
+
+```{r, echo = TRUE, message = FALSE, warning = FALSE}
+# Input as raw data
+mean(1:6)
+
+# Input as object
+die <- 1:6
+mean(die)
+
+# Input as result of a function
+round(mean(die))
+```
+
+### PRACTICE ACTIVITIES
+In the code chunks below, write your own code to practice with objects and functions. If you get stuck, click on the "Hint" and "Solution" buttons.
+
+#### `r fa("fas fa-keyboard", fill = "#D52B1E")` Practice Activity 1
+
+Why does the following object not work?
+
+```{r basic-q1, exercise = TRUE}
+my_variable <- 10
+my_varıable
+```
+
+<div id="basic-q1-hint">
+  **Hint:** Look carefully with the name of the object!
+</div>
+
+
+#### `r fa("fas fa-keyboard", fill = "#D52B1E")` Practice Activity 2
+
+Why does the following function not work?
+
+```{r basic-q2, exercise = TRUE}
+round(3.1415, corners = 2)
+```
+
+<div id="basic-q2-hint">
+  **Hint:** If you’re not sure which names to use with a function, you can look up the function’s help by typing `?round` in RStudio console.
+</div>
+
+#### `r fa("fas fa-keyboard", fill = "#D52B1E")` Practice Activity 3
+
+```{r basic-q3, echo=FALSE}
+question("How to install a package?",
+  answer('new.packages("dplyr")'),
+  answer('install.packages("dplyr")', correct = TRUE),
+  answer('installed.packages("dplyr")')
+)
+```
+
+#### `r fa("fas fa-keyboard", fill = "#D52B1E")` Practice Activity 4
+
+```{r basic-q4, echo=FALSE}
+question("How to load a package?",
+  answer('require(dplyr)'),
+  answer('load.packages(dplyr)'),
+  answer('library(dplyr)', correct = TRUE)
+)
+```
+

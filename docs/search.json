@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "Hands-On Tranining with R",
+      "description": "A Delightful Series of Modules to Learn R Programming for Beginners and R Enthusiasts.\n",
+      "author": [],
+      "date": "`r Sys.Date()`",
+      "contents": "\n\nContents\nWelcome\nOrganizers\nImportant links\nPrework\nLearning Objectives\nPart 1\n\nExpected sessions (subject to change)\nAcknowledgments\n\n\n\n\nWelcome\nThis site is the official home for all information related to the Hands-On Training with R at LCCI. This is the place to find all the information you’ll need to get the most out of this program, including accessing learning materials, exercises, to RStudio, R packages, and additional resources.\nOrganizers\nHitendra Pandey \nSatya Vyshnavi Thondapu \nVignesh Thanikachalam \nImportant links\nRStudio Server\nExercise\nPrework\nInstall R & RStudio into your local system from Workspace ONE, or\nAccess RStudio Server: https://rstudio.am.lilly.com.\n\nYou need UNIX account (you should have it if you have access to CLUWE) and a membership. Please request group membership/management access to: unixacct and brainiac-compute groups for accessing RStudio Server.\n\nMake sure you’re connect to BIG-IP client before accessing RStudio Server.\nLearning Objectives\nPart 1\nModule\nDescription\n01\nR Introduction\n02\nImporting data into R\n03\nGeneral Data Manipulation using Base R\n04\nFunctions and Programming\n05\nIntroduction to tidyverse\nAfter each module you will have exercise to workout and instructors will be there to help you.\nExpected sessions (subject to change)\nModule\nDate\nLecture\nInstructor\n01\n\nThe Very Basic\nVT\nAcknowledgments\nThis is a website made with distill by RStudio.\n\n\n\n",
+      "last_modified": "2021-09-28T08:41:27-04:00"
+    }
+  ],
+  "collections": []
+}

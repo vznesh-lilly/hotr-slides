@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The Very Basic</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Vignesh Thanikachalam" />
+    <meta name="date" content="2021-09-28" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: title-slide, top , left
+
+&lt;div class="hbar"&gt;&lt;/div&gt;
+
+&lt;br/&gt;
+
+# The Very Basic
+
+## An Overview of R Language &amp;ndash; Module 01
+
+### Vignesh Thanikachalam 
+
+---
+class: middle, center
+background-color: #404040
+
+## .big-text[Hello.]
+
+---
+class:inverse-blue, middle, center
+
+# What are R and RStudio?
+
+---
+class: middle, center
+
+.pull-left[
+
+&lt;img src="images/module/01/Rlogo.svg" style="height: 70px;"&gt;
+
+&lt;img src="images/module/01/shutterstock/engine.jpg" width="800" class=external style="display: block; margin: auto;" /&gt;
+
+### Engine
+]
+
+.pull-right[
+
+&lt;img src="images/module/01/RStudio-Logo-flat.svg" style="height: 70px;"&gt;
+
+&lt;img src="images/module/01/shutterstock/car_wheel.jpg" width="800" class=external style="display: block; margin: auto;" /&gt;
+
+### Dashboard
+]
+
+---
+class: middle, center
+
+## .display[R] is a programming language that runs R code
+
+--
+
+## .display[RStudio] is an .em[integrated development environment (IDE)] that provides an interface by adding many convenient features and tools
+
+---
+
+class: top, center
+
+### RStudio: Console
+
+&lt;img class="external" src="images/module/01/rstudio_gui.png" style="margin-top: -28px;"&gt;
+
+---
+
+class: inverse-green, middle, center
+
+# How do I code in R?
+
+---
+class: middle, center, frame
+
+# .center[Values]
+
+--
+
+## .display[Numeric] &amp;rarr; `1`
+
+--
+
+## .display[Character] &amp;rarr; `"Foo"`
+
+---
+name: console-basics
+class: middle, frame
+
+# .center[Console Basics]
+
+--
+
+```r
+&gt; 2 + 2
+[1] 4
+```
+
+---
+
+template: console-basics
+
+```r
+&gt; 2 + 2
+[1] 4
+
+&gt; 7:35
+ [1]  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+[26] 32 33 34 35
+```
+
+---
+
+template: console-basics
+
+```r
+&gt; 2 + 2
+[1] 4
+
+&gt; 7:35
+ [1]  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+[26] 32 33 34 35
+
+&gt; 5 -
++ 
++ 1
+[1] 4
+```
+
+---
+class: middle, center, frame
+
+# Objects
+
+--
+
+## .em[What is an object?] Just a name that you can use to call up stored data.
+
+---
+class: top, center, frame
+background-image: url(images/module/01/r_object_simple.png)
+background-size: 900px
+background-position: center
+
+# Objects
+
+---
+class: top, center, frame
+background-image: url(images/module/01/r_object_multiple.png)
+background-size: 700px
+background-position: center
+
+# Objects
+
+---
+class: top, center
+### RStudio: Environment 
+
+&lt;img class="external" src="images/module/01/rstudio_env_pane.png" style="margin-top: -28px;"&gt;
+
+---
+
+class: top, center, frame
+background-image: url(images/module/01/r_functions.png)
+background-size: 700px
+background-position: center
+
+# Functions
+
+
+---
+class:middle, center, frame
+
+# Errors, Warnings, and Messages
+
+--
+
+## Error in…, Error:
+
+--
+
+## Warning:  
+
+???
+
+R reports .red[**Errors**], .red[**Warnings**], and .red[**Messages**] in a glaring red font
+ 
+**Errors:** When the red text is a legitimate error, it will be prefaced with "Error in…" and will try to explain what went wrong. Generally when there’s an error, the code will not run.
+
+**Warnings:** When the red text is a warning, it will be prefaced with "Warning:" and R will try to explain why there’s a warning. Generally your code will still work, but with some caveats.
+
+**Messages:** When the red text doesn’t start with either "Error" or "Warning", it’s just a friendly message.
+---
+class:inverse-blue2, middle, center
+
+# What are R packages?
+
+---
+class: middle, center
+
+.pull-left[
+
+## .display[R]
+&lt;img src="images/module/01/r_packages_mobile.jpg" style="width:200px"&gt;
+]
+
+.pull-right[
+
+## .display[R Packages]
+&lt;img src="images/module/01/r_packages_app_store.jpg" style="margin-top: 20px; width:600px;"&gt;
+]
+
+---
+class: top, center, frame
+background-image: url(images/module/01/r_packages_default.png)
+background-size: 240px
+background-position: center
+
+# Base R
+
+---
+
+class: top, center,frame
+
+# Extending
+
+&lt;img src="images/module/01/r_packages_multiple.png" width="853" style="display: block; margin: auto;" /&gt;
+
+---
+class: top, center
+
+&lt;https://cran.r-project.org/&gt;
+
+&lt;img class="external" src="images/module/01/r_cran_website.png" style="margin-top: -18px;"&gt;
+
+---
+class: top, center, frame
+
+# Using Packages
+
+--
+
+.pull-left[
+
+## .display[1]
+
+
+```r
+install.packages("foo")
+```
+
+**Downloads files to computer**
+
+]
+
+--
+
+.pull-right[
+
+## .display[2]
+
+
+```r
+library(foo)
+```
+
+**Loads package**
+]
+
+---
+class: inverse-purple, middle, center
+
+# Getting Help with Help Pages
+
+---
+
+class: middle, center, frame
+
+# Help
+
+--
+## `help()` and `?`
+
+---
+class: top, center
+
+### RStudio: Help 
+
+&lt;img class="external" src="images/module/01/rstudio_help_page.png" style="margin-top: -28px;"&gt;
+
+???
+
+**Description** - A short summary of what the function does.
+
+**Usage** - An example of how you would type the function. Each argument of the function will appear in the order R expects you to supply it (if you don’t use argument names).
+
+**Arguments** - A list of each argument the function takes, what type of information R expects you to supply for the argument, and what the function will do with the information.
+
+**Details** - A more in-depth description of the function and how it operates. The details section also gives the function author a chance to alert you to anything you might want to know when using the function.
+
+**Value** - A description of what the function returns when you run it.
+
+**See Also** - A short list of related R functions.
+
+**Examples** - Example code that uses the function and is guaranteed to work. The examples section of a help page usually demonstrates a couple different ways to use a function. This helps give you an idea of what the function is capable of.
+
+---
+background-color: #EE342A
+background-image: url(images/module/01/LillyLogo_White.png)
+background-size: 600px 420px
+background-position: center
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n",
+"highlightLanguage": "r",
+"highlightStyle": "xcode",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

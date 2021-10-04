@@ -1,0 +1,16 @@
+name: "hotr"
+title: "Hands-On Training with R"
+output_dir: "docs"
+favicon: images/favicon.ico
+repository_url: https://github.com/
+navbar:
+  logo:
+    image: images/LillyLogo_RGB_Red.svg
+    href: https://now.lilly.com
+  right:
+    - icon: fab fa-github
+      href: https://github.com/rstudio/distill
+output: 
+  distill::distill_article:
+    toc: true
+    css: styles.css
